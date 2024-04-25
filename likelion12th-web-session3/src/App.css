@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin:0px;
+  padding:0px;
+  min-width: fit-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainbox {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 650px;
+    padding: 20px;
+    margin: 30px;
+    margin-right:auto;
+    margin-left: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  section {
+    margin-bottom:24px;
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin:0px;
+    padding:0px;
+    font-size:50px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: left;
   }
-}
+
+  h2 {
+    margin:0px;
+    padding:0px;
+    font-size:25px;
+    font-weight: bold;
+    color:#90c0ff;
+    font-weight: 400;
+    margin-bottom: 16px;
+    border-bottom: 3px solid #72AFFF;
+    padding-bottom: 5px;
+  }
+
+  .pic-insta{
+    font-size:11px;
+    font-weight: 300;
+    color: #282828;
+    float: right;
+  }
+
+  .myface{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+  }
+
+  .site{
+    text-align: left;
+  }
+
+  .site-img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 6px;
+  }
+
+  .lang {
+    overflow: hidden;
+    margin-bottom: 4px;
+    }
+
+  .title{
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .ability{
+    font-size: 13px;
+    font-weight: 500;
+    color:#3a3a3a;
+    padding-left:16px;
+  }
+
+  .grade{
+    font-size:12px;
+    font-weight: 300;
+    color: #282828;
+    float: right;
+  }
