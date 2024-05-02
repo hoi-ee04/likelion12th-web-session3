@@ -18,7 +18,9 @@ const Login = ({onLoginSuccess}) => {
             onLoginSuccess(true);     // 로그인 성공 시 상태 변경
         }
         else {
-            alert("ID 혹은 Password가 틀렸습니다. 다시 시도하세요.")
+            alert("ID 혹은 Password가 틀렸습니다. 다시 시도하세요.");
+            setId("");
+            setPassword("");
         }
     };
 
