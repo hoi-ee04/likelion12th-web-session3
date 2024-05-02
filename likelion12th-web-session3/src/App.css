@@ -7,52 +7,18 @@ body {
   min-width: fit-content;
 }
 
-body.dark {
-  background-color: #242424;
-}
-
 .mainbox {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     width: 650px;
     padding: 20px;
-    margin: 0px;
+    margin: 30px;
     margin-right:auto;
     margin-left: auto;
   }
-
   
-
-  .mainbox-content {
-    display: flex;
-    align-items: center;
-  }
-  .toggle-button {
-    margin-left: 10px;
-  }
-
   
-  .App.dark {
-    background-color: #242424;
-    color: #ffffff;
-  }
-
-  .App.dark h1,
-  .App.dark h2 {
-    color: #90c0ff;
-  }
-
-  .App.dark .pic-insta {
-    color: #cacaca;
-  }
-
-  .App.dark .title,
-  .App.dark .ability,
-  .App.dark .grade {
-    color: #ffffff;
-  }
-
   section {
     margin-bottom:24px;
     text-align: left;
@@ -95,7 +61,6 @@ body.dark {
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    margin-top: 40px;
   }
 
   .site{
@@ -103,11 +68,10 @@ body.dark {
   }
 
   .site-img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     float: right;
     margin: 6px;
-    border-radius: 30%;
   }
 
   .lang {
