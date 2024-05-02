@@ -7,11 +7,11 @@ import Login from './components/Login';
 import './App.css';
 
 function App() {
-  // 다크모드 상태를 관리하는 state
-  const [darkMode, setDarkMode] = useState(false);
-
   // 로그인 상태를 관리하는 state
   const [isLogined, setIsLogined] = useState(false);
+
+  // 다크모드 상태를 관리하는 statee
+  const [darkMode, setDarkMode] = useState(false);
 
   //로그인 성공 시 실행될 콜백 함수
   const handleLoginSuccess = () => {
@@ -21,12 +21,10 @@ function App() {
   // 다크모드 토글 함수
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    // 다크모드 상태가 변경될 때 body 요소에 dark 클래스를 추가 또는 제거
-    document.body.classList.toggle('dark', !darkMode);
   };
 
   return (
-    <div className={`App ${isLogined ? "dark" : ""}`}>
+    <div className={`App ${darkMode ? 'dark' : ''}`}>
       {!isLogined ? (
           <Login onLoginSuccess={handleLoginSuccess} />
         ) : (
