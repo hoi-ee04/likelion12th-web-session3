@@ -1,11 +1,11 @@
-import React from 'react';
 import myface from './image/myface.jpg';
 
-function Header() {
+function Header({darkMode, toggleDarkMode}) {
     return (
         <div className="mainbox">
+            <button onClick={toggleDarkMode}>{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
             <a href="https://www.instagram.com/hoi._.ee/">
-                <img className='myface' src={myface} alt=""/>
+                <img className='myface' src={myface} alt="프로필 - 인스타 링크"/>
             </a>
             <h1>Heelim, Chae</h1>   
             <p className ="title">Major. Information Communication Engineering</p>
