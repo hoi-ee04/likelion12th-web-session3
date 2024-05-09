@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Mylife() {
     return (
         <div className='mainbox'>

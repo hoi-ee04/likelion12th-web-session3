@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import {UserInfo} from "./UserInfo";
+import { useState } from "react";
 import "./Login.css";
 
 const Login = ({onLoginSuccess}) => {
@@ -9,9 +8,11 @@ const Login = ({onLoginSuccess}) => {
     const handleLogin = (e) => {
         e.preventDefault();     // 폼 기본 동작 방지
 
-        // UserInfo에서 id, password 가져오기
-        const storedId = UserInfo.id;
-        const storedPassword = UserInfo.password;
+        localStorage.setItem('id', 'cogmlfla');
+        localStorage.setItem('password', 'gmdlfla');
+        
+        const storedId = localStorage.getItem('id');
+        const storedPassword = localStorage.getItem('password');
 
         // 입력된 id, password와 UserInfo의 값 비교
         if (id === storedId && password === storedPassword) {
